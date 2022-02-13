@@ -36,10 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # 新增的app，需要到这里注册
-    'article',
-    'userprofile',
-    'password_reset',
-    'comment',
+    'article',  # 文章app
+    'userprofile',  # 用户管理app
+    'comment',  # 评论app
+    'password_reset',  # 第三方密码重置app
 
 ]
 
@@ -129,14 +129,14 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # SMTP服务器，改为你的邮箱的smtp!
-EMAIL_HOST = 'smtp.qq.com'
+EMAIL_HOST = 'smtp.163.com'
 # 改为你自己的邮箱名！
-EMAIL_HOST_USER = 'your_email_account@xxx.com'
+EMAIL_HOST_USER = 'newy_qs@163.com'
 # 你的邮箱密码
-EMAIL_HOST_PASSWORD = 'your_password'
+EMAIL_HOST_PASSWORD = 'lqs108094'
 # 发送邮件的端口
 EMAIL_PORT = 25
 # 是否使用 TLS
 EMAIL_USE_TLS = True
 # 默认的发件人
-DEFAULT_FROM_EMAIL = 'xxx的博客 <your_email_account@xxx.com>'
+DEFAULT_FROM_EMAIL = 'lqs的博客 <newy_qs@163.com>'

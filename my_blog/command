@@ -1,0 +1,17 @@
+# 创建项目
+django-admin startproject <project_name>
+
+# 创建app
+python manage.py startapp <app_name>
+
+# 创建迁移表
+python manage.py makemigrations
+
+# 应用迁移
+python manage.py makemigrations
+
+# 运行服务器
+python manage.py runserver 0.0.0.0:8000
+
+# 创建管理员账号
+python manage.py createsuperuser
