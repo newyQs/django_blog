@@ -5,7 +5,7 @@ from . import views
 app_name = 'article'
 
 urlpatterns = [
-    # app添加的url配置
+    # article的app添加的url配置：
     path("article_list/", views.article_list, name="article_list"),
     path("article_detail/<int:id>/", views.article_details, name="article_detail"),
     path("article_create/", views.article_create, name="article_create"),

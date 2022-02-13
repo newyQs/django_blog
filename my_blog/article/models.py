@@ -33,10 +33,11 @@ class ArticlePost(models.Model):  # 每个模型都应该是django.db.models.Mod
         """
         定义数据的行为
         即表示，最新创建的放在最上面展示
-        ordering
-        db_table
-        verbose_name
-        verbose_name_plural
+        比如有：
+            ordering
+            db_table
+            verbose_name
+            verbose_name_plural
         """
         ordering = ("-created",)  # 定义排序，created表示创建顺序，-created表示以创建时间的倒序
 

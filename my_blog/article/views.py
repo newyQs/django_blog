@@ -46,7 +46,11 @@ def article_list(request):
     page = request.GET.get('page')
     articles = paginator.get_page(page)
     # 增加 search 到 context
-    context = {'articles': articles, 'order': order, 'search': search}
+    context = {
+        'articles': articles,
+        'order': order,
+        'search': search
+    }
     return render(request, 'article/list.html', context)
 
 

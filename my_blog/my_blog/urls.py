@@ -29,7 +29,7 @@ urlpatterns = [
     path('userprofile/', include('userprofile.urls', namespace='userprofile')),
     # 重置密码app：第三方集成
     path('password-reset/', include('password_reset.urls')),
-    # 评论
+    # 评论管理app
     path('comment/', include('comment.urls', namespace='comment')),
 ]
 
